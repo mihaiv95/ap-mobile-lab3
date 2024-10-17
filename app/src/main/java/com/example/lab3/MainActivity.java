@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        Button addButton = findViewById(R.id.addButton);
-        addButton.setOnClickListener(new View.OnClickListener() {
+        Button addButtonn = findViewById(R.id.addButton);
+        addButtonn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 EditText firstEditText = findViewById(R.id.firstEditText);
                 EditText secondEditText = findViewById(R.id.secondEditText);
