@@ -68,5 +68,17 @@ public class MainActivity extends AppCompatActivity {
                 result.setText(num1/num2+"");
             }
         });
+
+        Button powButton = findViewById(R.id.powButton);
+        powButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                EditText firstEditText = findViewById(R.id.firstEditText);
+                EditText secondEditText = findViewById(R.id.secondEditText);
+                TextView result = findViewById(R.id.result);
+                int num1 = Integer.parseInt(firstEditText.getText().toString());
+                int num2 = Integer.parseInt(secondEditText.getText().toString());
+                result.setText(Math.pow(num1, num2)+"");
+            }
+        });
     }
 }
